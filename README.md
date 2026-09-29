@@ -6,7 +6,7 @@ Rust 製のローカルモデルルーターです。OpenAI 互換の `POST /v1/
 
 ## 準備
 
-Rust の stable ツールチェーンをインストールした環境で実行します。このリポジトリの開発環境には Rust ツールチェーンがないため、ここではビルドと実測値を確認できていません。
+Rust の stable ツールチェーンをインストールした環境で実行します。GitHub Actions の Linux 環境でテストとリリースビルドは成功しています。速度の実測値、macOS と Windows でのビルドはまだ確認していません。
 
 ```powershell
 Copy-Item config.example.json config.json
@@ -52,3 +52,7 @@ Invoke-RestMethod -Uri http://127.0.0.1:8787/v1/chat/completions -Method Post -H
 ```powershell
 cargo test
 ```
+
+## ライセンス
+
+[MIT License](LICENSE) で公開しています。

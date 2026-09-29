@@ -3,6 +3,7 @@ name = "hispeed-router"
 version = "0.1.0"
 edition = "2021"
 description = "Local, session-sticky OpenAI-compatible model router"
+license = "MIT"
 
 [dependencies]
 axum = "0.8"
